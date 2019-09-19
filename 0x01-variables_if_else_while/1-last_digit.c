@@ -25,7 +25,7 @@ int main(void)
 	{
 		printf(" %d and is 0\n", last);
 	}
-	if (last < 6)
+	else if (last < 6)
 	{
 		printf(" %d and is less than 6 and not 0\n", last);
 	}
