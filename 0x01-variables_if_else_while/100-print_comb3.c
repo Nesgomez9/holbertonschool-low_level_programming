@@ -11,7 +11,7 @@ int main(void)
 {
 	int a;
 
-	a = 0;
+	a = 1;
 	while (a <= 99)
 	{
 		if (a >= 10 && a < 12 || a >= 20 && a < 23 || a >= 30 && a < 34)
