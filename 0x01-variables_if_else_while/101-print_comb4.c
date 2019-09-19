@@ -17,16 +17,15 @@ int main(void)
 	d = 2;
 	e = 2;
 	f = 2;
-	while (a < 8)
+	while (a < 9)
 	{
-		while (b <= 8)
+		while (b < 9)
 		{
 			while (d <= 9)
 			{
 				putchar(a + '0');
 				putchar(b + '0');
 				putchar(d + '0');
-				d++;
 				if (a >= 7 && c >= 8 && e >= 9)
 				{
 				}
@@ -35,18 +34,19 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
-}
-
+				d++;
+			}
 			e++;
 			b++;
 			d = e;
 		}
 		c++;
-		b = c;
 		a++;
 		f++;
+		e = f;
+		b = c;
 		d = f;
-}
+	}
 	putchar('\n');
 	return (0);
 }
