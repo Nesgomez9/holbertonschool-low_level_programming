@@ -57,3 +57,8 @@ int add(int a, int b);
 #define PRINT_TO_98_H
 void print_to_98(int a);
 #endif
+
+#ifndef PRINT_TIMES_TABLE_H
+#define PRINT_TIMES_TABLE_H
+void print_times_table(int n);
+#endif
