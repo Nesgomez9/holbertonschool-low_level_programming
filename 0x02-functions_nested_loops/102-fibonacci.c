@@ -17,7 +17,7 @@ int main(void)
 
 	for (i = 0; i < 25; i++)
 	{
-		if ( i < 24)
+		if (i < 24)
 		{
 			printf("%lu, ", a);
 			printf("%lu, ", b);
