@@ -17,10 +17,18 @@ int main(void)
 
 	for (i = 0; i < 25; i++)
 	{
-		printf("%lu, ", a);
-		printf("%lu, ", b);
-		a = a + b;
-		b = b + a;
+		if ( i < 24)
+		{
+			printf("%lu, ", a);
+			printf("%lu, ", b);
+			a = a + b;
+			b = b + a;
+		}
+		else
+		{
+			printf("%lu, ", a);
+			printf("%lu", b);
+		}
 	}
 	printf("\n");
 	return (0);
