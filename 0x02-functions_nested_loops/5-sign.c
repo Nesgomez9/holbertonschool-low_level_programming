@@ -2,7 +2,7 @@
 #include "holberton.h"
 
 /**
- * _print_sign - writes the character c to stdout
+ * print_sign - writes the character c to stdout
  * @c: The character to print
  *
  * Return: On success 1.
