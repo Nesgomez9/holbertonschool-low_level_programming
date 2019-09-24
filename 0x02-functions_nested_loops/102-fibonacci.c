@@ -8,14 +8,14 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-int main (void)
+int main(void)
 {
 	unsigned long int a, b, i;
 
 	a = 1;
 	b = 2;
 
-	for(i = 0; i <= 50; i++)
+	for (i = 0; i <= 50; i++)
 	{
 		printf("%lu, ", a);
 		printf("%lu, ", b);
