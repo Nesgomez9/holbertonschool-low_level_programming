@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include "holberton."
+#include "holberton.h"
 
 /**
  * print_times_table - writes the character c to stdout
