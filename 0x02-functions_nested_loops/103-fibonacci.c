@@ -1,8 +1,9 @@
 #include <unistd.h>
 #include <stdio.h>
+#include "holberton.h"
 
 /**
- * main - writes the character c to stdout
+ * main - writes 0 un succes
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
@@ -10,7 +11,7 @@
 
 int main(void)
 {
-	unsigned long int a, b, i, c, d, n;
+	unsigned long int a, b, i, n;
 
 	a = 1;
 	b = 2;
