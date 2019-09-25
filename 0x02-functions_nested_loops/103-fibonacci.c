@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	unsigned long int a, b, i,c, d, n;
+	unsigned long int a, b, i, c, d, n;
 
 	a = 1;
 	b = 2;
@@ -18,13 +18,13 @@ int main(void)
 
 	for (i = 0; i < 25; i++)
 	{
-		if(a < 4000000 && b < 4000000)
+		if (a < 4000000 && b < 4000000)
 		{
-			if(a % 2 == 0)
+			if (a % 2 == 0)
 			{
-				n = n+ a;
+				n = n + a;
 			}
-			else if(b % 2 == 0)
+			else if (b % 2 == 0)
 			{
 				n = n + b;
 			}
