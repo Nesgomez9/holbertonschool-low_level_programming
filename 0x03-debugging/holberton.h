@@ -16,3 +16,8 @@ int largest_number(int a, int b, int c);
 #define PRINT_REMAINING_DAYS_H
 void print_remaining_days(int a, int b, int c);
 #endif
+
+#ifndef CONVERT_DAY_H
+#define CONVERT_DAY_H
+int convert_day(int month, int day);
+#endif
