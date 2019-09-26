@@ -12,13 +12,13 @@
 int main(void)
 {
 	int i;
-	long long int a;
+	unsigned long int a;
 
 	a = 612852475143;
 
 	for  (i = 2; i <= 10000; i++)
 	{
-		if (a % i == 0 )
+		if (a % i == 0)
 		{
 			if ((i == 2) || (i == 3) || (i == 5) || (i == 7))
 			{
@@ -31,7 +31,7 @@ int main(void)
 		}
 
 	}
-	printf("%lld", a);
+	printf("%lu", a);
 	printf("\n");
 	return (0);
 }
