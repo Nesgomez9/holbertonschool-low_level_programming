@@ -8,6 +8,11 @@ int _putchar(char c);
 int _isupper(int c);
 #endif
 
+#ifndef MUL_H
+#define MUL_H
+int mul(int a, int b);
+#endif
+
 #ifndef _ISDIGIT_H
 #define _ISDIGIT_H
 int _isdigit(int c);
