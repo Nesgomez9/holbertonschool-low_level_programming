@@ -14,7 +14,17 @@ void print_number(int n)
 
 	b = 10;
 
-	if (n != 0)
+	if (n >= 0 && n < 10)
+	{
+		_putchar(n + '0');
+	}
+	else if ( n < 0 && n > -10)
+	{
+		n *= -1;
+		_putchar('-');
+		_putchar(n + '0');
+	}
+	else
 	{
 		if (n < 0)
 		{
@@ -32,9 +42,5 @@ void print_number(int n)
 			_putchar(m + '0');
 			b /= 10;
 		}
-	}
-	else
-	{
-		_putchar('0');
 	}
 }

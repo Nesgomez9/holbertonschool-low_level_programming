@@ -12,7 +12,7 @@ int main(void)
 	_putchar('\n');
 	print_number(402);
 	_putchar('\n');
-	print_number(10024);
+	print_number(-1);
 	_putchar('\n');
 	print_number(0);
 	_putchar('\n');
