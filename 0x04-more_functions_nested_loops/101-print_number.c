@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
  * print_number- writes the character c to stdout
@@ -11,14 +12,15 @@
 void print_number(int n)
 {
 	int b, m;
+	unsigned int c;
 
 	b = 10;
-
+	c = n;
 	if (n >= 0 && n < 10)
 	{
 		_putchar(n + '0');
 	}
-	else if ( n < 0 && n > -10)
+	else if (n < 0 && n > -10)
 	{
 		n *= -1;
 		_putchar('-');
@@ -31,14 +33,15 @@ void print_number(int n)
 			n *= -1;
 			_putchar('-');
 		}
-		while (n / b > 9)
+		c = n;
+		while (c / b > 9)
 		{
 			b *= 10;
 		}
 		while (b > 0)
 		{
-			m = n / b;
-			n %= b;
+			m = c / b;
+			c %= b;
 			_putchar(m + '0');
 			b /= 10;
 		}
