@@ -52,3 +52,8 @@ void print_square(int);
 #define PRINT_TRIANGLE_H
 void print_triangle(int);
 #endif
+
+#ifndef PRINT_NUMBER_H
+#define PRINT_NUMBER_H
+void print_number(int);
+#endif
