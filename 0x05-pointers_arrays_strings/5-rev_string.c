@@ -1,0 +1,32 @@
+#include "holberton.h"
+
+/**
+ * rev_string - writes the character c to stdout
+ * @s: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+
+void rev_string(char *s)
+{
+	int i = 0;
+	char temp;
+	int j, len;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+
+	i -= 1;
+	len = i;
+	for (j = 0; j < len / 2; j++)
+	{
+		temp = s[j];
+		s[j] = s[i];
+		s[i] = temp;
+		i--;
+	}
+
+}
