@@ -10,13 +10,14 @@
 
 int _atoi(char *s)
 {
-	int x, y, a, n;
+	int x, y, a, n, b;
 
 	x = 0;
 	y = 1;
 	n = 0;
+	b = 1;
 
-	while ((s[x] < '0') || (s[x] > '9'))
+	while ((s[x] != '\0' && s[x] < '0') || (s[x] > '9' && s[x] != '\0'))
 	{
 		if (s[x] < 48 && s[x] > 57 && s[y] >= 48 && s[y] <= 57)
 		{
@@ -33,8 +34,9 @@ int _atoi(char *s)
 	{
 		if (s[a] == '-')
 		{
-			n *= -1;
+			b *= -1;
 		}
 	}
+	n *= b;
 	return (n);
 }

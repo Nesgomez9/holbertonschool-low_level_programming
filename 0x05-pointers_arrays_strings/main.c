@@ -10,15 +10,15 @@ int main(void)
 {
 	int n;
 
-	n = _atoi("98");
+	n = _atoi("11");
 	printf("%d\n", n);
-	n = _atoi("-402");
+	n = _atoi("aaaa");
 	printf("%d\n", n);
 	n = _atoi("          ------++++++-----+++++--98");
 	printf("%d\n", n);
-	n = _atoi("214748364");
+	n = _atoi("2147483647");
 	printf("%d\n", n);
-	n = _atoi("0");
+	n = _atoi("00000");
 	printf("%d\n", n);
 	n = _atoi("Suite 402");
 	printf("%d\n", n);
