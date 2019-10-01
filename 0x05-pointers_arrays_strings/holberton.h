@@ -43,3 +43,8 @@ void puts2(char *str);
 #define _PUTS_HALF_H
 void puts_half(char *str);
 #endif
+
+#ifndef _PRINT_ARRAY_H
+#define _PRINT_ARRAY_H
+void print_array(int *a, int n);
+#endif
