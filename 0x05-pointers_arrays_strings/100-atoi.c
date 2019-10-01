@@ -10,8 +10,8 @@
 
 int _atoi(char *s)
 {
-	int x, y, a, n, b;
-
+	int x, y, a, b;
+	unsigned int n;
 	x = 0;
 	y = 1;
 	n = 0;
@@ -37,6 +37,5 @@ int _atoi(char *s)
 			b *= -1;
 		}
 	}
-	n *= b;
-	return (n);
+	return (n * b);
 }
