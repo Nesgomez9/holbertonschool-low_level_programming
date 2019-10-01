@@ -23,17 +23,17 @@ void rev_string(char *s)
 	len = i;
 	if (i % 2 == 0)
 	{
-	for (j = 0; j < len / 2; j++)
-	{
-		temp = s[j];
-		s[j] = s[i];
-		s[i] = temp;
-		i--;
-	}
+		for (j = 0; j < len / 2; j++)
+		{
+			temp = s[j];
+			s[j] = s[i];
+			s[i] = temp;
+			i--;
+		}
 	}
 	else
 	{
-		for (j = 0; j<= len / 2; j++)
+		for (j = 0; j <= len / 2; j++)
 		{
 			temp = s[j];
 			s[j] = s[i];
