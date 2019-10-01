@@ -9,8 +9,11 @@
 int main(void)
 {
 	char *str;
+	int len;
 
-	str = "0123456789";
-	puts_half(str);
+	str = "Holberton!";
+	len = _strlen(str);
+	printf("%d\n", len);
 	return (0);
+
 }
