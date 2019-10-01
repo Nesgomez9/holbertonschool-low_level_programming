@@ -8,9 +8,9 @@
  */
 int main(void)
 {
-	char s[11] = "Haolberton";
-	printf("%s\n", s);
-	rev_string(s);
-	printf("%s\n", s);
+	char *str;
+
+	str = "01234567891";
+	puts_half(str);
 	return (0);
 }
