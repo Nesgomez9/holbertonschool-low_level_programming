@@ -12,6 +12,7 @@ int _atoi(char *s)
 {
 	int x, y, a, b;
 	unsigned int n;
+
 	x = 0;
 	y = 1;
 	n = 0;
