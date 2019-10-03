@@ -8,3 +8,7 @@ int _putchar(char c);
 char *_strcat(char *dest, char *src);
 #endif
 
+#ifndef _STRNCAT_H
+#define _STRNCAT_H
+char *_strncat(char *dest, char *src, int n);
+#endif
