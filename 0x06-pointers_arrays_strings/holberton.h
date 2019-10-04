@@ -48,3 +48,8 @@ char *leet(char *s);
 #define _ROOT13_H
 char *rot13(char *s);
 #endif
+
+#ifndef _PNUMBER_H
+#define _PNUMBER_H
+void print_number(int n);
+#endif
