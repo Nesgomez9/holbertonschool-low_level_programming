@@ -38,3 +38,8 @@ char *string_toupper(char *s);
 #define _CSTRING_H
 char *cap_string(char *s);
 #endif
+
+#ifndef _LEET_H
+#define _LEET_H
+char *leet(char *s);
+#endif
