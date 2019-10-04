@@ -19,7 +19,7 @@ char *_strncat(char *dest, char *src, int n);
 char *_strncpy(char *dest, char *src, int n);
 #endif
 
-#ifndef _STRCMP_H
+#ifndef _STRNCMP_H
 #define _STRNCMP_H
 int _strcmp(char *s1, char *s2);
 #endif
@@ -27,4 +27,9 @@ int _strcmp(char *s1, char *s2);
 #ifndef _RARRAY_H
 #define _RARRAY_H
 void reverse_array(int *a, int n);
+#endif
+
+#ifndef _STOUPPER_H
+#define _STOUPPER_H
+char *string_toupper(char *s);
 #endif
