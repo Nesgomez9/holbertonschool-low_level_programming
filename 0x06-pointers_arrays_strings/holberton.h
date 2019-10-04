@@ -43,3 +43,8 @@ char *cap_string(char *s);
 #define _LEET_H
 char *leet(char *s);
 #endif
+
+#ifndef _ROOT13_H
+#define _ROOT13_H
+char *rot13(char *s);
+#endif
