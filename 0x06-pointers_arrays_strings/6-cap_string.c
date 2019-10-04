@@ -7,7 +7,7 @@
  * Return: dest.
  */
 
-char *cap_string(char *s);
+char *cap_string(char *s)
 {
 	int i, len;
 	char *c = " \t\n,;.ª?\"(){}";
@@ -16,9 +16,10 @@ char *cap_string(char *s);
 	while (s[len] != 0)
 	{
 		if ((s[0] >= 97) && (s[0] <= 122))
+		{
 			s[0] -= 32;
-
-		for (i = 0; c[i]; i++)
+		}
+			for (i = 0; c[i]; i++)
 		{
 			if (s[len] == c[i])
 			{
@@ -31,4 +32,5 @@ char *cap_string(char *s);
 		}
 		len++;
 	}
+	return (s);
 }
