@@ -14,17 +14,17 @@ char *rot13(char *s)
 	char *c = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char *n = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	while (str[len] != 0)
+	while (s[len] != 0)
 	{
 		for (i = 0; c[i]; i++)
 		{
-			if (str[len] == c[i])
+			if (s[len] == c[i])
 			{
-				str[len] = n[i];
+				s[len] = n[i];
 				break;
 			}
 		}
 		len++;
 	}
-	return (str);
+	return (s);
 }
