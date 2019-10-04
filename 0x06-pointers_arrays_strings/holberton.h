@@ -23,3 +23,8 @@ char *_strncpy(char *dest, char *src, int n);
 #define _STRNCMP_H
 int _strcmp(char *s1, char *s2);
 #endif
+
+#ifndef _RARRAY_H
+#define _RARRAY_H
+void reverse_array(int *a, int n);
+#endif
