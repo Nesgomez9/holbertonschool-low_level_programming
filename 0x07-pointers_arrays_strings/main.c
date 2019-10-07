@@ -9,7 +9,7 @@
 int main(void)
 {
 	char *s = "hello, world";
-	char *f = "\0";
+	char *f = "world";
 	char *t;
 	t = _strpbrk(s, f);
 	printf("%s\n", t);
