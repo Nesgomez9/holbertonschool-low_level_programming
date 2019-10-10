@@ -13,7 +13,8 @@ int _strlen_recursion(char *s)
 	{
 		return (0);
 	}
-		return (1 + _strlen_recursion(s + 1));
+	s += 1;
+		return (1 + _strlen_recursion(s));
 }
 
 /**
@@ -46,8 +47,8 @@ int is_palindrome1(char *s, int i, int len)
 
 int is_palindrome(char *s)
 {
-	int i = 0;
 	int len = _strlen_recursion(s);
+	int i = 0;
 
 	return (is_palindrome1(s, i, len - 1));
 }
