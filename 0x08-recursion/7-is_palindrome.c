@@ -9,20 +9,21 @@
 
 int _strlen_recursion(char *s)
 {
-
-        if (*s != 0)
-        {
-                return (1 + _strlen_recursion(s + 1));
-        }
-        else
-        {
-                return (0);
-        }
+	if (*s != 0)
+	{
+		return (1 + _strlen_recursion(s + 1));
+	}
+	else
+	{
+		return (0);
+	}
 }
 
 /**
  * is_palindrome1 - Prints the array reverse
  * @s: array to rev
+ * @i: int
+ * @len: int
  *
  * Return: Nothing
  */
@@ -39,9 +40,17 @@ int is_palindrome1(char *s, int i, int len)
 	return (0);
 }
 
+/**
+ * is_palindrome - Prints the array reverse
+ * @s: array to rev
+ *
+ * Return: Nothing
+ */
+
 int is_palindrome(char *s)
 {
 	int i = 0;
 	int len = _strlen_recursion(s);
+
 	return (is_palindrome1(s, i, len - 1));
 }
