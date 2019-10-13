@@ -61,7 +61,12 @@ int main(int argc, char *argv[])
 
 	for (i = 0; argv[1][i] != 0; i++)
 	{
-		if (!isdigit(argv[1][i]))
+		if (argv[1][0] == '-')
+		{
+			printf("0\n");
+			return (0);
+		}
+		else if (!isdigit(argv[1][i]))
 		{
 			printf("Error\n");
 			return (1);
