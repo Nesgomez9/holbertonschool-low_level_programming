@@ -11,7 +11,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int i, size1, size2, a, j;
+	int i, size1, size2, j;
 	char *dest;
 
 	if (s1 == 0)
@@ -32,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 		if (i < size1)
 			dest[i] = s1[i];
 		else
-			dest[i] = s2[j++]
+			dest[i] = s2[j++];
 }
 	return (dest);
 }
