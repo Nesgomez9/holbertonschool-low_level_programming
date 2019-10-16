@@ -3,7 +3,7 @@
 
 /**
  * alloc_grid- Prints the array reverse
- * @whith: string
+ * @width: string
  * @height: string
  *
  * Return: Nothing
@@ -18,8 +18,8 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-	p = malloc (height * sizeof(int));
-	if (p == 0)
+	p = malloc(height * sizeof(int));
+	if (p == NULL)
 	{
 		return (NULL);
 	}
@@ -40,5 +40,5 @@ int **alloc_grid(int width, int height)
 			p[i][j] = 0;
 		}
 	}
-return (p);
+	return (p);
 }
