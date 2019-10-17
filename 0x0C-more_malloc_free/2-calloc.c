@@ -1,8 +1,8 @@
 #include "holberton.h"
 #include <stdlib.h>
-
+#include <stdio.h>
 /**
- * _calloc - check the code for Holberton School students.
+ * *_calloc - check the code for Holberton School students.
  * @size: size of the lenght
  * @nmemb: int
  *
@@ -22,7 +22,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (!a)
 		return (NULL);
 
-	for (i = 0; i < nmemb; i++)
+	for (i = 0; i < (nmemb * size); i++)
 		a[i] = 0;
+
 	return (a);
 }
