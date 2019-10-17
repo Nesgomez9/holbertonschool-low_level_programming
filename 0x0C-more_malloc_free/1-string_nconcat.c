@@ -35,5 +35,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		else
 			dest[cont] = s2[a++];
 	}
+	dest[cont] = 0;
 	return (dest);
 }
