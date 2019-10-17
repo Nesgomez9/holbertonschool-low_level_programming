@@ -17,13 +17,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (!s1)
 		s1 = "";
+	else
+		for (i = 0; s1[i]; i++)
+		{}
+
 	if (!s2)
 		s2 = "";
-
-	for (i = 0; s1[i]; i++)
-	{}
-	for (j = 0; s2[j]; j++)
-	{}
+	else
+		for (j = 0; s2[j]; j++)
+		{}
 	if (n > j)
 		n = j;
 
