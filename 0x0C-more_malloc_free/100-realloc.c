@@ -13,7 +13,7 @@ char *cpy(char *src, char *dest, unsigned int size)
 {
 	unsigned int i;
 
-	for (i = 0; i < size && src[i]; i++)
+	for (i = 0; i < size; i++)
 		dest[i] = src[i];
 	return (dest);
 }
@@ -31,21 +31,21 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	void *ptr2;
 
+	if (new_size == old_size)
+                return (ptr);
+	if (!ptr)
+        {
+                ptr2 = malloc(new_size);
+                if (!ptr2)
+                        return (NULL);
+                free(ptr);
+                return (ptr2);
+        }
 	if (new_size == 0 && ptr)
 	{
 		free(ptr);
 		return (NULL);
 	}
-	if (!ptr)
-	{
-		ptr2 = malloc(new_size);
-		if (!ptr2)
-			return (NULL);
-		free(ptr);
-		return (ptr2);
-	}
-	if (new_size == old_size)
-		return (ptr);
 
 	ptr2 = malloc(new_size);
 	if (!ptr2)
