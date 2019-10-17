@@ -1,11 +1,19 @@
 #include "holberton.h"
 #include <stdlib.h>
 
-char *cpy(char *src, char *dest)
+/**
+ * cpy - check the code for Holberton School students.
+ * @src: size of the lenght
+ * @dest: string
+ *
+ *Return: Always 0.
+ */
+
+char *cpy(char *src, char *dest, unsigned int size)
 {
 	unsigned int i;
 
-	for(i = 0; src[i]; i++)
+	for (i = 0; i < size && src[i]; i++)
 		dest[i] = src[i];
 	return (dest);
 }
@@ -41,8 +49,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 
 	ptr2 = malloc(new_size);
 	if (!ptr2)
-		return(NULL);
-	cpy(ptr,ptr2);
+		return (NULL);
+	cpy(ptr, ptr2, old_size);
 	free(ptr);
 	return (ptr2);
 }
