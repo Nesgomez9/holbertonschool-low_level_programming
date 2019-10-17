@@ -5,6 +5,7 @@
  * cpy - check the code for Holberton School students.
  * @src: size of the lenght
  * @dest: string
+ * @size: int
  *
  *Return: Always 0.
  */
@@ -32,15 +33,15 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	void *ptr2;
 
 	if (new_size == old_size)
-                return (ptr);
+		return (ptr);
 	if (!ptr)
-        {
-                ptr2 = malloc(new_size);
-                if (!ptr2)
-                        return (NULL);
-                free(ptr);
-                return (ptr2);
-        }
+	{
+		ptr2 = malloc(new_size);
+		if (!ptr2)
+			return (NULL);
+		free(ptr);
+		return (ptr2);
+	}
 	if (new_size == 0 && ptr)
 	{
 		free(ptr);
