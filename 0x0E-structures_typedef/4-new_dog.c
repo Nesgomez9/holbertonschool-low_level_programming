@@ -42,40 +42,26 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *d;
 	char *ncpy, *ocpy;
 
-	d = malloc(sizeof(*d));
-	if (d)
-	{
-		if (name)
-		{
-			ncpy = _strdup(name);
-			if (!ncpy)
-			{
-				free(ncpy);
-				return (NULL);
-			}
-			(*d).name = name;
-		}
-		else
-			return (NULL);
-		(*d).age = age;
-		if (name)
-		{
-			ocpy = _strdup(owner);
-			if (!ocpy)
-			{
-				free(ocpy);
-				free(ncpy);
-				return (NULL);
-			}
-			(*d).owner = owner;
-		}
-		else
-		{
-			free(ncpy);
-			return (NULL);
-		}
-	}
-	else
+	d = malloc(sizeof(struct dog));
+	if (!d || !name || !owner)
 		return (NULL);
+	ncpy = _strdup(name);
+	if (!ncpy)
+	{
+		free(ncpy);
+		free(d);
+		return (NULL);
+	}
+	(*d).name = name;
+	(*d).age = age;
+	ocpy = _strdup(owner);
+	if (!ocpy)
+	{
+		free(ocpy);
+		free(ncpy);
+		free(d);
+		return (NULL);
+	}
+	(*d).owner = owner;
 	return (d);
 }
