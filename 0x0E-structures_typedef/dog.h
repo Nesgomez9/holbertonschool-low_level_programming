@@ -3,34 +3,35 @@
 int _putchar(char c);
 #endif
 
-#ifndef DOGGY
-#define DOGGY
+#ifndef MYDOG
+#define MYDOG
+
 /**
- * struct dog - Create a dog
- * @name: The name of the dog
- * @age: The age of the
- * @owner: The owner of the dog
+ * struct dog - check the code for Holberton School students.
+ * @name: Name.
+ * @age: Age.
+ * @owner: Owner.
  */
-struct dog
+
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
-typedef struct dog dog_t;
+} dog_t;
 #endif
 
-#ifndef _INIT_DOG_H
-#define _INIT_DOG_H
+#ifndef _INIT_MYDOG_H
+#define _INIT_MYDOG_H
 void init_dog(struct dog *d, char *name, float age, char *owner);
 #endif
 
-#ifndef _PRINT_DOG_H
-#define _PRINT_DOG_H
+#ifndef _PRINT_MYDOG_H
+#define _PRINT_MYDOG_H
 void print_dog(struct dog *d);
 #endif
 
-#ifndef _NDOG_H
-#define _NDOG_H
+#ifndef _NEW_DOG_H
+#define _NEW_DOG_H
 dog_t *new_dog(char *name, float age, char *owner);
 #endif
