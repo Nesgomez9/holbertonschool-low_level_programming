@@ -1,0 +1,1 @@
+This folder contains all de files of the project of the structures 
