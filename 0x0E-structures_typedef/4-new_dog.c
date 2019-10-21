@@ -40,39 +40,39 @@ char *_strdup(char *str)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
-	d = malloc(sizeof(*d));
 	char *ncpy, *ocpy;
 
-	if(d)
+	d = malloc(sizeof(*d));
+	if (d)
 	{
-		if(name)
+		if (name)
 		{
-			ncpy=_strdup(name);
-			if(!ncpy)
+			ncpy = _strdup(name);
+			if (!ncpy)
 			{
 				free(ncpy);
-				return(NULL);
+				return (NULL);
 			}
-				(*d).name = name;
+			(*d).name = name;
 		}
 		else
 			return (NULL);
 		(*d).age = age;
-		if(name)
-                {
-                        ocpy=_strdup(owner);
-			if(!ocpy)
+		if (name)
+		{
+			ocpy = _strdup(owner);
+			if (!ocpy)
 			{
 				free(ocpy);
 				free(ncpy);
 				return (NULL);
 			}
-                        (*d).owner = owner;
-                }
-                else
+			(*d).owner = owner;
+		}
+		else
 		{
 			free(ncpy);
-                        return (NULL);
+			return (NULL);
 		}
 	}
 	else
