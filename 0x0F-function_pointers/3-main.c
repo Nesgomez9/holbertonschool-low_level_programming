@@ -38,6 +38,6 @@ int main(int argc, char *argv[])
 	num2 = atoi(argv[3]);
 	oper = get_op_func(argv[2]);
 	resul = oper(num1, num2);
-	printf("%d\n", resul);
+	printf("%i\n", resul);
 	return (0);
 }
