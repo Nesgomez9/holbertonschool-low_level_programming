@@ -1,4 +1,4 @@
-#include "calc.h"
+#include "3-calc.h"
 #include <stdio.h>
 /**
  * op_ad - Operation
@@ -7,7 +7,7 @@
  *
  * Return:  Operation
  */
-int op_ad(int a, int b)
+int op_add(int a, int b)
 {
 	return (a + b);
 }
