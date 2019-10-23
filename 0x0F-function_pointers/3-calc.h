@@ -10,7 +10,6 @@ int (*get_op_func(char *s))(int, int);
 
 #ifndef _STRUCTS_H
 #define _STRUCTS_H
-#include <stddef.h>
 /**
  * struct op - Struct op
  *

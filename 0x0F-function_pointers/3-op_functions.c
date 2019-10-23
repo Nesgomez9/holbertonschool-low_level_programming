@@ -1,7 +1,6 @@
 #include "3-calc.h"
-#include <stdio.h>
 /**
- * op_ad - Operation
+ * op_add - Operation
  * @a: int
  * @b: int
  *
