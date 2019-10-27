@@ -3,10 +3,11 @@
 #include "variadic_functions.h"
 
 /**
- * sum_them_all - check the code for Holberton School students.
- * @n: Number
+ * sum_them_all -  sums all arguments variadic
+ * @n: Number of Arguments
  * @...: Arguments Variadic
- * Return: Always 0.
+ *
+ * Return: sum of its parameters
  */
 
 int sum_them_all(const unsigned int n, ...)
