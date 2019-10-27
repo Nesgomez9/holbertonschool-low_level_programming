@@ -24,11 +24,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		s = va_arg(numb, char *);
 		if (!s)
-		{
 			printf("(nil)");
-			return;
-		}
-		printf("%s", s);
+		else
+			printf("%s", s);
 		if (separator)
 			printf("%s", separator);
 	}
@@ -36,6 +34,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	if (!s)
 		printf("(nil)\n");
 	else
-		printf("%s\n", va_arg(numb, char *));
+		printf("%s\n", s);
 	va_end(numb);
 }
