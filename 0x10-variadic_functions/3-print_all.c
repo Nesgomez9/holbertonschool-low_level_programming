@@ -58,7 +58,7 @@ void print_all(const char * const format, ...)
 	int i, j;
 	char *sep = "";
 	va_list p;
-	type_d type []= {
+	type_d type[] = {
 		{"c", p_char},
 		{"i", p_int},
 		{"f", p_float},
