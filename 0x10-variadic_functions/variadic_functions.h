@@ -13,7 +13,7 @@ void print_all(const char * const format, ...);
 /**
  * struct type - Struct op
  *
- * @op: The operator
+ * @t_p: The operator
  * @f: The function associated
  */
 typedef struct type
