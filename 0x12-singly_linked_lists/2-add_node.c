@@ -7,7 +7,7 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int _strlen(char *s)
+int _strlen(const char *s)
 {
 	int i = 0;
 
@@ -34,9 +34,8 @@ list_t *add_node(list_t **head, const char *str)
 	if (!new_node)
 		return (0);
 
-	s = strdup(str);
-	new_node->str = s;
-	new_node->len = _strlen(s);
+	new_node->str = strdup(str);
+	new_node->len = _strlen(str);
 	new_node->next = *head;
 	*head = new_node;
 	return (new_node);
