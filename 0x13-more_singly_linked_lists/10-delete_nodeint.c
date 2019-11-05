@@ -1,11 +1,10 @@
 #include "lists.h"
 
 /**
- * insert_nodeint_at_index - check the code for Holberton School students.
+ * delete_nodeint_at_index - check the code for Holberton School students.
  *
  * @head: head
- * @idx: indexx
- * @n: n
+ * @index: index
  * Return: Always 0.
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
@@ -33,7 +32,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		{
 			temp2 = temp->next;
 			temp->next = temp2->next;
-			free (temp2);
+			free(temp2);
 			return (1);
 
 		}
