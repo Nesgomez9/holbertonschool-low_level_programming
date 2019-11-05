@@ -21,7 +21,7 @@ int _strlen(const char *s)
  * add_nodeint - check the code for Holberton School students.
  *
  * @head: head
- * @str: string
+ * @n: string
  * Return: Always 0.
  */
 listint_t *add_nodeint(listint_t **head, const int n)
