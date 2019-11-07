@@ -1,0 +1,1 @@
+In this folder contains the project of the bit manipulation
