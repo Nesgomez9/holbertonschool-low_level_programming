@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * free_list - frees memory of a list
+ * free_dlistint - frees memory of a list
  * @head: pointer to head of singly linked list
  *
  * Return: No Return
