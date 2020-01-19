@@ -46,7 +46,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	collnode->key = keydup;
 	collnode->value = valuedup;
-	collnode->next = hnode;
+	collnode->next = ht->array[index];
 	ht->array[index] = collnode;
 
 	return (1);
